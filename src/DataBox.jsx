@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import DeleteItem from "./Delete";
-import logo from "./pic/images.jpg";
+import PicBox from "./PicBox";
+
 const Show = ({ id, Name, render }) => {
   const [isDelete, setIsDelete] = useState(null);
   return (
     <>
       <div className="box">
         <p> {Name}</p>
-        <img src={logo}></img>
+        <PicBox />
         <button
           className="DellB"
           onClick={() => {
