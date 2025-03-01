@@ -134,15 +134,20 @@ img {
   color: white;
 }
 
+.picHandel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .lr {
   border: none;
-  background-color: #699ec653;
-  position: absolute;
-  margin-left: -12px;
-  margin-top: 35px;
-  box-shadow: 1px 1px 10px black;
+  background-color: #699ec600;
   border-radius: 100%;
   transition: 200ms;
+  height: 30px;
+  margin-top: 30px;
+  margin-left: -2px;
 }
 
 .lr:active {

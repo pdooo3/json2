@@ -8,7 +8,9 @@ const Show = ({ id, Name, render }) => {
     <>
       <div className="box">
         <p> {Name}</p>
-        <PicBox />
+        <div className="picHandel">
+          <PicBox />
+        </div>
         <button
           className="DellB"
           onClick={() => {
