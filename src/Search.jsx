@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import "boxicons";
 import DataBox from "./DataBox";
-const Search = ({ data, loadPost }) => {
+const Search = ({ data, loadPost, Admin }) => {
   const [toggle, setToggle] = useState(null);
   const [searched, setSearched] = useState("");
   const [dataF, setDataF] = useState([]);
@@ -20,12 +21,14 @@ const Search = ({ data, loadPost }) => {
   return (
     <>
       <div className="container">
-        <input
-          placeholder="search somting"
-          onChange={(e) => {
-            setSearched(e.target.value);
-          }}
-        />
+        <label>
+          <input
+            placeholder={"Search"}
+            onChange={(e) => {
+              setSearched(e.target.value);
+            }}
+          />
+        </label>
         {dataF !== undefined &&
           dataF.map((val) => (
             <DataBox
@@ -33,6 +36,7 @@ const Search = ({ data, loadPost }) => {
               id={val.ID}
               render={loadPost}
               Name={val.Name}
+              Admin={Admin}
             />
           ))}
       </div>

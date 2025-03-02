@@ -4,7 +4,7 @@ import Show from "./DataBox";
 import Loading from "./Loding";
 import Search from "./Search";
 import SideBar from "./SideBar";
-const GET = () => {
+const GET = ({ Admin }) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(null);
   useEffect(() => {
@@ -20,7 +20,7 @@ const GET = () => {
   }
   return (
     <>
-      <Search data={data} loadPost={loadPost} />
+      <Search data={data} loadPost={loadPost} Admin={Admin} />
 
       <div className="container">
         {/* {data.map((val) => ( */}
