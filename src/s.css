@@ -20,7 +20,7 @@ body {
   text-align: center;
   width: 200px;
   height: 220px;
-  background-color: #b5e2d1;
+  background-color: #4c4c4c;
   border-radius: 10px;
   margin: 10px;
   margin-top: 35px;
@@ -32,7 +32,7 @@ body {
 
 p {
   font-size: large;
-  color: black;
+  color: #ffffff;
   margin: 10px;
   border-radius: 10px;
 }
@@ -141,8 +141,9 @@ img {
 }
 
 .lr {
+  color: white;
   border: none;
-  background-color: #699ec600;
+  background-color: #00000000;
   border-radius: 10%;
   transition: 200ms;
   height: 30px;
@@ -155,14 +156,23 @@ img {
 }
 
 input {
-  width: 30%;
-  height: 30px;
+  width: 40%;
+  height: 28px;
   border: none;
   outline: none;
   text-align: center;
-  background-color: #ffffff00;
+  box-shadow: 0px 0px 10px rgb(181, 181, 181);
   position: fixed;
+  border-radius: 8px;
+  transition: 500ms;
 
+}
+
+input:focus {
+  width: 50%;
+  transition: 500ms;
+  background-color: #1b1b1bb2;
+  color: rgb(255, 255, 255);
 }
 
 /* .search-button {

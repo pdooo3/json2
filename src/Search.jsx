@@ -11,7 +11,7 @@ const Search = ({ data, loadPost }) => {
       console.log(searched);
       setDataF(
         data.filter((Name) =>
-          Name.Name.toLowerCase().slice(0, searched.length).includes(searched)
+          Name.Name.slice(0, searched.length).includes(searched)
         )
       );
     }

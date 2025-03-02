@@ -13,7 +13,7 @@ const SideBar = () => {
           toggle
             ? ((document.querySelector(".sidebar").style.width = "0vw"),
               setToggle(!toggle))
-            : ((document.querySelector(".sidebar").style.width = "40vw"),
+            : ((document.querySelector(".sidebar").style.width = "25vw"),
               setToggle(!toggle));
         }}
       >

@@ -15,7 +15,7 @@ const DeleteItem = ({ id, render }) => {
   }, [id]);
   return (
     <>
-      <Loading isLoading={loading} />?
+      <Loading isLoading={loading} />
     </>
   );
 };
