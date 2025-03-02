@@ -20,7 +20,6 @@ const SideBar = () => {
         <box-icon name="menu"></box-icon>
       </button>
       <div className="sidebar">
-        <Search />
         <a href="">Add</a>
         <a href="">About</a>
       </div>

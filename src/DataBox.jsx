@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import DeleteItem from "./Delete";
 import PicBox from "./PicBox";
 
-const Show = ({ id, Name, render }) => {
+const DataBox = ({ id, Name, render }) => {
   const [isDelete, setIsDelete] = useState(null);
   return (
     <>
@@ -24,4 +24,4 @@ const Show = ({ id, Name, render }) => {
     </>
   );
 };
-export default Show;
+export default DataBox;

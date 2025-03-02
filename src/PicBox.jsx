@@ -12,7 +12,6 @@ const PicBox = () => {
         className="lr"
         onClick={() => {
           setCorrentPic(correntPic - 1);
-          console.log(correntPic);
           if (correntPic <= 0) {
             setCorrentPic(pic.length - 1);
           }
@@ -25,7 +24,6 @@ const PicBox = () => {
         className="lr"
         onClick={() => {
           setCorrentPic(correntPic + 1);
-          console.log(correntPic);
           if (correntPic > pic.length - 2) {
             setCorrentPic(0);
           }
