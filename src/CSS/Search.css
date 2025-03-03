@@ -1,0 +1,27 @@
+.Search-Box {
+    font-size: small;
+    right: 0;
+    width: 40%;
+    height: 28px;
+    border: none;
+    outline: none;
+    text-align: center;
+    box-shadow: 0px -4px 10px rgb(0, 0, 0);
+    position: fixed;
+    transition: 500ms;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgba(213, 167, 134, 0.71);
+}
+
+.Search-Box:focus {
+    width: 50%;
+    height: 40px;
+    right: 25%;
+    transition: 500ms;
+    background: rgba(193, 191, 191, 0.414);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    margin-top: 10PX;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
+}

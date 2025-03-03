@@ -1,7 +1,8 @@
 import { useState } from "react";
-import logo from "./pic/1.jpg";
-import logo1 from "./pic/2.jpg";
-import logo2 from "./pic/3.jpg";
+import logo from "../pic/1.jpg";
+import logo1 from "../pic/2.jpg";
+import logo2 from "../pic/3.jpg";
+import "../CSS/PicBox.css";
 import "boxicons";
 const PicBox = () => {
   const [pic, setPic] = useState([logo, logo1, logo2]);

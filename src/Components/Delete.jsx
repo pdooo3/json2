@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Loading from "./Loding";
-import "./s.css";
 const DeleteItem = ({ id, render }) => {
   const [loading, setLoading] = useState(null);
   useEffect(() => {

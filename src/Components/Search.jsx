@@ -1,34 +1,31 @@
 import { useEffect, useState } from "react";
+import "../CSS/Search.css";
 import "boxicons";
 import DataBox from "./DataBox";
 const Search = ({ data, loadPost, Admin }) => {
-  const [toggle, setToggle] = useState(null);
   const [searched, setSearched] = useState("");
   const [dataF, setDataF] = useState([]);
   useEffect(() => {
     if (searched === "") {
       setDataF(data);
     } else {
-      console.log(searched);
       setDataF(
-        data.filter((Name) =>
-          Name.Name.slice(0, searched.length).includes(searched)
+        data.filter((Val) =>
+          Val.Name.slice(0, searched.length).includes(searched)
         )
       );
     }
   }, [data, searched]);
-
   return (
     <>
       <div className="container">
-        <label>
-          <input
-            placeholder={"Search"}
-            onChange={(e) => {
-              setSearched(e.target.value);
-            }}
-          />
-        </label>
+        <input
+          className="Search-Box"
+          placeholder={"Search"}
+          onChange={(e) => {
+            setSearched(e.target.value);
+          }}
+        />
         {dataF !== undefined &&
           dataF.map((val) => (
             <DataBox
@@ -43,5 +40,4 @@ const Search = ({ data, loadPost, Admin }) => {
     </>
   );
 };
-
 export default Search;
