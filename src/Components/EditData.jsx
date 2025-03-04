@@ -1,11 +1,7 @@
 import "../CSS/EditData.css";
-import { useEffect, useState } from "react";
 import axios from "axios";
 const EditData = ({ Name, setShowEdit, id, render }) => {
-  const [editName, setEditName] = useState("");
-
   async function editData(formData) {
-    setEditName(formData.get("Name"));
     await axios
       .put(`https://testapitome.freehost.io?key=maryam`, {
         id: id,
@@ -20,21 +16,20 @@ const EditData = ({ Name, setShowEdit, id, render }) => {
     <>
       <div className="EditBox">
         <form action={editData}>
-          <h1>{id}</h1>
-          <label htmlFor="">
+          <label>
             Name
             <input name="Name" defaultValue={Name} className="Edit-Name" />
           </label>
           <button
             className="Cancel"
-            onClick={() => {
+            onClick={(e) => {
               setShowEdit(false);
             }}
           >
             <box-icon name="x"></box-icon>
           </button>
           <button className="SetEdit" type="submit">
-            set
+            SET
           </button>
         </form>
       </div>
