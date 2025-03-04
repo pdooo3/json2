@@ -11,7 +11,7 @@
     transition: 500ms;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-color: rgba(213, 167, 134, 0.71);
+    background-color: rgb(255, 255, 255);
 }
 
 .Search-Box:focus {

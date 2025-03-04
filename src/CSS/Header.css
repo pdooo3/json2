@@ -3,8 +3,24 @@ header {
     height: 28px;
     width: 100vw;
     color: black;
-    background-color: #ffffff;
+    background-color: #000000;
     text-align: center;
     box-shadow: 3px 0px 10px rgb(0, 0, 0);
-    background-color: chocolate;
+    background-color: rgb(255, 255, 255);
+}
+
+.LOD {
+    position: fixed;
+    left: 30px;
+    background-color: #ffffff;
+    width: 40px;
+    top: 2px;
+    height: 10px;
+    border: none;
+    transition: 300ms;
+    border-radius: 10px;
+}
+
+.LOD:hover {
+    transition: 300ms;
 }

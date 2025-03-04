@@ -14,7 +14,7 @@ const EditData = ({ Name, setShowEdit, id, render }) => {
   }
   return (
     <>
-      <div className="EditBox">
+      <div id="EditBox" className="EditBox">
         <form action={editData}>
           <label>
             Name
