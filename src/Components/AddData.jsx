@@ -21,15 +21,15 @@ const Add = () => {
         <form className="DataForm" action={AddToDataBase}>
           <label htmlFor="">
             Name
-            <input className="Addinput" name="Name" type="text" />
+            <input className="Addinput" name="Name" type="text" required />
           </label>
           <label htmlFor="">
             Age
-            <input className="Addinput" name="Age" type="number" />
+            <input className="Addinput" name="Age" type="number" required />
           </label>
           <label htmlFor="">
             City
-            <input className="Addinput" name="City" type="text" />
+            <input className="Addinput" name="City" type="text" required />
           </label>
           <button className="AddB" type="submit">
             ADD
