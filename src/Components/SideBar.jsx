@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Routes, BrowserRouter, Route, Link, Outlet } from "react-router";
 import "../CSS/SideBar.css";
 import "boxicons";
 const SideBar = () => {
@@ -18,7 +19,7 @@ const SideBar = () => {
         <box-icon name="menu"></box-icon>
       </button>
       <div className="sidebar">
-        <a>Add</a>
+        <Link to="/json2/add">add</Link>
         <a>About</a>
       </div>
     </>

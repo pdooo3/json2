@@ -8,7 +8,7 @@
     height: 100vh;
     overflow: hidden;
     box-shadow: 0px 11px 10px rgb(0, 0, 0);
-    background-color: rgba(223, 223, 223, 0.485);
+    background-color: rgba(255, 255, 255, 0.647);
 }
 
 .sidebar a {

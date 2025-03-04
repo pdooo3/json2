@@ -8,9 +8,9 @@ const Header = () => {
         <button
           onClick={() => {
             toggleStyle
-              ? ((document.body.style.background = "black"),
+              ? ((document.body.style.background = "rgb(44, 44, 44)"),
                 setToggleStyle(!toggleStyle))
-              : ((document.body.style.background = "white"),
+              : ((document.body.style.background = " rgb(205, 205, 205)"),
                 setToggleStyle(!toggleStyle));
           }}
           className="LOD"

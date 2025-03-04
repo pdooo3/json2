@@ -19,7 +19,6 @@
 
 }
 
-
 p {
     font-size: large;
     color: #ffffff;
@@ -29,8 +28,9 @@ p {
 
 .DellB {
     margin-top: 30px;
-    background-color: rgb(128, 27, 27);
+    background-color: rgb(125, 125, 125);
     color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 1px white;
     border-radius: 5px;
     border: none;
     height: 34px;
@@ -40,26 +40,26 @@ p {
 }
 
 .DellB:hover {
-    background-color: rgb(153, 23, 23);
-    transition: 1s;
-
+    background-color: rgb(204, 204, 204);
+    transition: 500ms;
 }
 
 .EditB {
     margin-top: 30px;
-    background-color: rgb(28, 21, 159);
-    color: rgb(255, 255, 255);
     border-radius: 5px;
     border: none;
     height: 34px;
     width: 70px;
     margin: 10px 3px -10px;
-    transition: 1s;
+    transition: 500ms;
+    background-color: rgb(125, 125, 125);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 1px white;
 
 }
 
 .EditB:hover {
-    background-color: rgb(4, 26, 89);
-    transition: 1s;
+    background-color: rgb(204, 204, 204);
+    transition: 500ms;
 
 }
