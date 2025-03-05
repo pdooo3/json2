@@ -6,19 +6,10 @@ const SideBar = () => {
   const [toggle, setToggle] = useState(null);
   return (
     <>
-      <button
-        className="oc"
-        onClick={() => {
-          toggle
-            ? ((document.querySelector(".sidebar").style.width = "0vw"),
-              setToggle(!toggle))
-            : ((document.querySelector(".sidebar").style.width = "35vw"),
-              setToggle(!toggle));
-        }}
-      >
+      <button className="oc" onClick={() => setToggle(!toggle)}>
         <box-icon name="menu"></box-icon>
       </button>
-      <div className="sidebar">
+      <div className="sidebar " style={{ width: toggle && "50vw" }}>
         <Link to="/json2/add">Add</Link>
         <Link to={"/json2"}>Data</Link>
       </div>
