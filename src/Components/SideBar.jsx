@@ -19,8 +19,8 @@ const SideBar = () => {
         <box-icon name="menu"></box-icon>
       </button>
       <div className="sidebar">
-        <Link to="/json2/add">add</Link>
-        <a>About</a>
+        <Link to="/json2/add">Add</Link>
+        <Link to={"/json2"}>Data</Link>
       </div>
     </>
   );

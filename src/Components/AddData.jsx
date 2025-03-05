@@ -2,7 +2,10 @@ import "../CSS/AddData.css";
 import SideBar from "./SideBar";
 import Header from "./Header";
 import axios from "axios";
+import { Navigate } from "react-router-dom";
+import { useState } from "react";
 const Add = () => {
+  const [sendToData, setSendToData] = useState(false);
   async function AddToDataBase(formData) {
     await axios
       .post(`https://testapitome.freehost.io?key=maryam`, {
@@ -12,6 +15,7 @@ const Add = () => {
       })
       .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
+    setSendToData(true);
   }
   return (
     <>
@@ -36,6 +40,7 @@ const Add = () => {
           </button>
         </form>
       </div>
+      {sendToData && <Navigate to={"/json2"} />}
     </>
   );
 };

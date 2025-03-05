@@ -1,14 +1,12 @@
 .formToAddData {
-    position: fixed;
-    left: 0;
-    right: 0;
-    margin-inline: auto;
-    width: fit-content;
-    margin-top: 35vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
 .DataForm {
+    margin-top: 35vh;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px;
