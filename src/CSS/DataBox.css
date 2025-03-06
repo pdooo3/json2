@@ -27,13 +27,16 @@ p {
     word-wrap: break-word;
     font-family: Arial, Helvetica, sans-serif;
     padding: 3px;
-    box-shadow: 1px 1px 3px inset rgb(0, 0, 0);
+    box-shadow: 1px 1px 2px inset rgb(0, 0, 0);
 }
 
 .box .EditB:hover,
 .DellB:hover {
-    background-color: rgb(204, 204, 204);
     transition: 500ms;
+}
+
+.DellB:hover {
+    transform: rotate(90deg);
 }
 
 .box .EditB,

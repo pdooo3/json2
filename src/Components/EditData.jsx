@@ -31,11 +31,11 @@ const EditData = ({ City, Age, Name, setShowEdit, id, render }) => {
             <input name="Name" defaultValue={Name} className="Edit-Name" />
           </label>
           <label>
-            Name
+            Age
             <input name="Age" defaultValue={Age} className="Edit-Name" />
           </label>
           <label>
-            Name
+            City
             <input name="City" defaultValue={City} className="Edit-Name" />
           </label>
           <button className="SetEdit" type="submit">
