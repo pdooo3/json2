@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Routes, BrowserRouter, Route, Link, Outlet } from "react-router";
+import { Link } from "react-router";
 import "../CSS/SideBar.css";
 import "boxicons";
 const SideBar = () => {

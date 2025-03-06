@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../CSS/Header.css";
 const Header = () => {
-  const [toggleStyle, setToggleStyle] = useState(true);
+  const [toggleStyle, setToggleStyle] = useState(false);
   document.body.style.background = toggleStyle
     ? "rgb(44, 44, 44)"
     : " rgb(205, 205, 205)";

@@ -9,7 +9,7 @@
     flex-direction: column;
     text-align: center;
     width: fit-content;
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(235, 235, 235);
     border-radius: 10px;
     margin: 10px;
     margin-top: 35px;
@@ -20,46 +20,41 @@
 }
 
 p {
-    font-size: large;
-    color: #ffffff;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    font-size: larger;
+    margin-top: 3px;
+    color: #060606;
+    text-align: center;
+    word-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
 }
 
-.DellB {
-    margin-top: 30px;
-    background-color: rgb(125, 125, 125);
-    color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 1px white;
-    border-radius: 5px;
-    border: none;
-    height: 34px;
-    width: 70px;
-    margin: 10px 3px -10px;
-    transition: 1s;
-}
-
+.box .EditB:hover,
 .DellB:hover {
     background-color: rgb(204, 204, 204);
     transition: 500ms;
 }
 
-.EditB {
-    margin-top: 30px;
+.box .EditB,
+.DellB {
     border-radius: 5px;
     border: none;
     height: 34px;
-    width: 70px;
-    margin: 10px 3px -10px;
+    width: 34px;
+    margin: -10px 0px -10px;
     transition: 500ms;
-    background-color: rgb(125, 125, 125);
-    color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 1px white;
+    background-color: rgba(15, 15, 15, 0);
 
 }
 
-.EditB:hover {
-    background-color: rgb(204, 204, 204);
-    transition: 500ms;
+.DellB {
 
+    margin-left: 80px;
+}
+
+.buttonDE {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: row;
+    width: 100%;
 }

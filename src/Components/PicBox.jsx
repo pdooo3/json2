@@ -18,7 +18,7 @@ const PicBox = () => {
           }
         }}
       >
-        <box-icon name="chevron-left" type="solid" color="#ffffff"></box-icon>
+        <box-icon name="chevron-left" type="solid"></box-icon>
       </button>
       <img src={pic[correntPic]}></img>
       <button
@@ -30,7 +30,7 @@ const PicBox = () => {
           }
         }}
       >
-        <box-icon name="chevron-right" type="solid" color="#ffffff"></box-icon>
+        <box-icon name="chevron-right" type="solid"></box-icon>
       </button>
     </>
   );

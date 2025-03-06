@@ -33,6 +33,8 @@ const Search = ({ data, loadPost, Admin }) => {
               id={val.ID}
               render={loadPost}
               Name={val.Name}
+              Age={val.Age}
+              City={val.City}
               Admin={Admin}
             />
           ))}
