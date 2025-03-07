@@ -2,17 +2,24 @@ import "../CSS/EditData.css";
 import axios from "axios";
 const EditData = ({ City, Age, Name, setShowEdit, id, render }) => {
   async function editData(formData) {
-    await axios
-      .put(`https://testapitome.freehost.io?key=maryam`, {
-        id: id,
-        name: formData.get("Name"),
-        age: formData.get("Age"),
-        city: formData.get("City"),
-      })
-      .then((res) => console.log(res.data))
-      .catch((err) => console.log(err));
+    if (
+      formData.get("Name") !== Name ||
+      formData.get("Age") !== Age ||
+      formData.get("City") !== City
+    ) {
+      await axios
+        .put(`https://testapitome.freehost.io?key=maryam`, {
+          id: id,
+          name: formData.get("Name"),
+          age: formData.get("Age"),
+          city: formData.get("City"),
+        })
+        .then((res) => console.log(res.data))
+        .catch((err) => console.log(err));
+      setShowEdit(false);
+      render();
+    }
     setShowEdit(false);
-    render();
   }
   return (
     <>
