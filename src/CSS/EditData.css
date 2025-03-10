@@ -3,13 +3,15 @@
     background-color: rgba(255, 255, 255, 0.941);
     position: fixed;
     margin-top: 30vh;
-    width: 69vw;
+    width: 40vw;
+    max-width: 60vw;
     height: fit-content;
     justify-content: center;
     border-radius: 10px;
     padding: 10px;
     flex-direction: column;
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    z-index: 1;
 }
 
 .Edit-Name {

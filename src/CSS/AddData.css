@@ -6,6 +6,9 @@
 }
 
 .DataForm {
+    width: 40vw;
+    max-width: 60vw;
+    height: 300px;
     margin-top: 35vh;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -17,7 +20,7 @@
     background-color: rgb(255, 255, 255);
     height: 30px;
     color: rgb(0, 0, 0);
-    width: 50vw;
+    width: 100%;
     margin: 10px 0px;
     border: none;
     border-radius: 5px;

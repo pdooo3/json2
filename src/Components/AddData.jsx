@@ -3,10 +3,12 @@ import SideBar from "./SideBar";
 import Header from "./Header";
 import axios from "axios";
 import { Navigate } from "react-router-dom";
-import { useState } from "react";
+import { useRef, useState } from "react";
 const Add = () => {
   const [sendToData, setSendToData] = useState(false);
+  const form = useRef();
   async function AddToDataBase(formData) {
+    form.current.reset();
     await axios
       .post(`https://testapitome.freehost.io?key=maryam`, {
         name: formData.get("Name"),
@@ -22,7 +24,10 @@ const Add = () => {
       <Header />
       <SideBar />
       <div className="formToAddData">
-        <form className="DataForm" action={AddToDataBase}>
+        <form ref={form} className="DataForm" action={AddToDataBase}>
+          <center>
+            <h1>ADD-FORM</h1>
+          </center>
           <label htmlFor="">
             Name
             <input className="Addinput" name="Name" type="text" required />

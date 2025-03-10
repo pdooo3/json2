@@ -6,32 +6,24 @@ import "../CSS/PicBox.css";
 import "boxicons";
 const PicBox = () => {
   const [pic, setPic] = useState([logo, logo1, logo2]);
-  const [correntPic, setCorrentPic] = useState(0);
+  const [correntPic, setCorrentPic] = useState(
+    Math.floor(Math.random() * pic.length)
+  );
   return (
     <>
-      <button
-        className="lr"
-        onClick={() => {
-          setCorrentPic(correntPic - 1);
-          if (correntPic <= 0) {
-            setCorrentPic(pic.length - 1);
-          }
-        }}
-      >
-        <box-icon name="chevron-left" type="solid"></box-icon>
-      </button>
-      <img src={pic[correntPic]}></img>
-      <button
-        className="lr"
-        onClick={() => {
-          setCorrentPic(correntPic + 1);
-          if (correntPic > pic.length - 2) {
-            setCorrentPic(0);
-          }
-        }}
-      >
-        <box-icon name="chevron-right" type="solid"></box-icon>
-      </button>
+      <div className="picBox">
+        <img src={pic[correntPic]}></img>
+
+        <div className="picB">
+          {pic.map((_, index) => (
+            <button
+              key={index}
+              className={correntPic === index ? "active" : "notAvtive"}
+              onClick={() => setCorrentPic(index)}
+            ></button>
+          ))}
+        </div>
+      </div>
     </>
   );
 };
