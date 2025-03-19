@@ -12,6 +12,8 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     background-color: rgb(255, 255, 255);
+    z-index: 3;
+    top: 0;
 }
 
 .Search-Box:focus {

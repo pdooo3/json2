@@ -3,8 +3,7 @@
     background-color: rgba(255, 255, 255, 0.941);
     position: fixed;
     margin-top: 30vh;
-    width: 40vw;
-    max-width: 60vw;
+    width: 250px;
     height: fit-content;
     justify-content: center;
     border-radius: 10px;
@@ -39,7 +38,7 @@ label {
     background-color: rgb(255, 255, 255);
     height: 27px;
     width: 27px;
-    margin-left: 93%;
+    margin-left: 90%;
     border-radius: 20%;
     border: none;
 }

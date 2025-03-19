@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "../CSS/Search.css";
 import "boxicons";
 import DataBox from "./DataBox";
+import Pages from "./Pages";
 const Search = ({ data, loadPost, Admin }) => {
   const [searched, setSearched] = useState("");
   const [dataF, setDataF] = useState([]);
@@ -30,18 +31,14 @@ const Search = ({ data, loadPost, Admin }) => {
             setSearched(e.target.value);
           }}
         />
-        {dataF !== undefined &&
-          dataF.map((val) => (
-            <DataBox
-              key={val.ID}
-              id={val.ID}
-              render={loadPost}
-              Name={val.Name}
-              Age={val.Age}
-              City={val.City}
-              Admin={Admin}
-            />
-          ))}
+        {dataF !== undefined && (
+          <Pages
+            data={dataF}
+            loadPost={loadPost}
+            Admin={Admin}
+            searched={searched}
+          />
+        )}
       </div>
     </>
   );

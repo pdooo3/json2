@@ -5,7 +5,9 @@ header {
     color: black;
     text-align: center;
     box-shadow: 3px 0px 10px rgb(0, 0, 0);
+    top: 0;
     background-color: rgb(255, 255, 255);
+
 }
 
 .LOD {
